@@ -56,7 +56,7 @@ $(function() {
 
     /*   test suite named "The menu" */
 
-        it('The menu',function(){
+        describe('The menu',function(){
             //check if body has class menu-hidden or not 
             it('is hidden ',function(){
             $('body').hasClass('menu-hidden').toEqual(true);                
@@ -98,7 +98,7 @@ $(function() {
 
             it('container should has one feed as minimum',function(){
                 //check if length of entry is greater than 0
-                expect($('.entry').length).toBeGreaterThan(0);
+                expect($('.feed .entry').length).toBeGreaterThan(0);
 
             });
          });
